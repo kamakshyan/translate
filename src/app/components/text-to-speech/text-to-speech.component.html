@@ -1,7 +1,6 @@
 <ng-container *transloco="let t; read: 'text-to-speech'">
   @if (text.trim()) {
     @if (isSupported) {
-      <!-- As a single button it is uglier code, but nice ripple animation -->
       <ion-button
         class="circle-icon"
         fill="clear"
@@ -17,7 +16,6 @@
           color="primary" />
       </ion-button>
     } @else {
-      <!-- If language is not supported -->
       <ion-button
         class="circle-icon"
         fill="clear"
